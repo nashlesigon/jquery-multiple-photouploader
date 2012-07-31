@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <title>jQuery Multiple File Upload</title>
+  <link rel="stylesheet" href="css/photouploader.css" type="text/css" />
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="js/azulphotouploader-2.0a.js"></script>
+  <script type="text/javascript">
+	(function($){
+		$(function(){
+			$("#uploader").azulphotouploader({
+	            context: 'Sample',
+            	hasTitle: true,
+            	post_url: 'process.php'
+        	});
+		});                                                                                   
+	})(jQuery);
+  </script>
+
+</head>
+<body>
+	<div id="uploader">
+		
+	</div>
+</body>
+</html>
